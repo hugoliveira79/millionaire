@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+	<div class="row">
+		<div class="col-xs-12 wrapper" >
+			<div class="home">
+			</div>
+
+			<div class="col-xs-12  area-jogo">
+				<div class="row">
+					<div class="col-xs-12  gestao-jogo">
+						<div class="col-xs-4 gestao-equipa">
+							<ul>
+								<li class="timer">
+									
+									<span id="countdown" style="font-weight: bold;">0</span>
+								</li>
+
+								<li style="margin-top:20px ">
+									<ul>
+										<li class="col-xs-4" onclick="getHelp()"><img class="ajuda-1" src="images/vida.png" alt=""></li>
+										<li class="col-xs-4" onclick="getHelp()" ><img class="ajuda-2" src="images/vida.png" alt=""></li>
+										<li class="col-xs-4" onclick="getHelp()" ><img class="ajuda-3" src="images/vida.png" alt=""></li>
+									</ul>
+								</li>
+
+								<li>
+									<img class="nova-pergunta" src="images/nova-pergunta.png" alt="" onclick="mostraPergunta()">
+								</li>
+							</ul>	
+						</div>
+
+						<div class="col-xs-4 verifica-resposta" onclick="checkAnswer()">
+						</div>
+
+						<div class="col-xs-3 scores">
+							<ul>
+								<li class="score-a"><span>0</span></li>
+								<li class="score-b"><span>0</span></li>
+								<li class="score-c"><span>0</span></li>
+								<li class="score-d"><span>0</span></li>
+							</ul>
+						</div>
+
+						<div class="col-xs-1 gestao-niveis">
+							<img src="images/progresso_0.png">
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 area-pergunta-resposta">
+						<div class="row">
+							<div class="col-xs-12 pergunta">
+								<p></p>
+							</div>
+
+							<div class="col-xs-12 respostas">
+								<ul>
+									<li class="resposta r-A" onclick="chooseAnswer('A')">
+										<p></p>
+									</li>
+									<li class="resposta r-B" onclick="chooseAnswer('B')">
+										<p></p>
+										
+									</li>
+									<li class="resposta r-C" onclick="chooseAnswer('C')">
+										<p></p>
+										
+									</li>
+									<li class="resposta r-D" onclick="chooseAnswer('D')">
+										<p></p>
+										
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+
+			<div class="row">
+					<div class="col-xs-12 parabens-n6">
+						<ul>
+							<li><img src="images/parabens.png" alt=""></li>
+							<li><img src="images/n6-parabens.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 ooohhh-n3">
+						<!-- <ul>
+							<li><img src="images/oooohhhh.png" alt=""></li>
+							<li><img src="images/n3-ooohhh.png" alt=""></li>
+						</ul> -->
+						<div class="score_result score_result_A">
+							<span>99</span>
+						</div>
+						<div class="score_result score_result_B">
+							<span>99</span>
+						</div>
+
+						<div class="score_result score_result_C">
+							<span>99</span>
+						</div>
+
+						<div class="score_result score_result_D">
+							<span>99</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 ooohhh">
+						<ul>
+							<li><img src="images/oooohhhh.png" alt=""></li>
+							
+						</ul>
+					</div>
+				</div>
+
+
+			
+		</div>
+	</div>
+	<div class="sounds">
+		<audio class="som-acertou"><source src="audio/acertou_resposta.mp3"></audio>
+		<audio class="som-bloqueou"><source src="audio/bloquear_resposta.mp3"></audio>
+		<audio class="som-falhou"><source src="audio/falhou_resposta.mp3"></audio>
+		<audio class="som-nova-pergunta"><source src="audio/nova_pergunta.mp3"></audio>
+	</div>
+	<form>
+		<input type="hidden" id="nivel_actual" name="nivel_actual" value="1" placeholder="">
+		<input type="hidden" name="ajudas_usadas" value="0" placeholder="">
+		<input type="hidden" id="timer_play" name="timer_play" value="0" placeholder="">
+
+		<input type="hidden" id="active_team" name="active_team" value="A" placeholder="">
+		<input type="hidden" id="score_pontuation_a" name="score_a" value="0" placeholder="">
+		<input type="hidden" id="score_pontuation_b" name="score_b" value="0" placeholder="">
+		<input type="hidden" id="score_pontuation_c" name="score_c" value="0" placeholder="">
+		<input type="hidden" id="score_pontuation_d" name="score_d" value="0" placeholder="">
+		<input type="hidden" id="selectedAnswer" name="selectedAnswer" value="0" placeholder="">
+
+	</form>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/perguntas.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" charset="utf-8" async defer>
+</script>
+
+</body>
+</html>

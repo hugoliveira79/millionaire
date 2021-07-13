@@ -1,0 +1,388 @@
+	var p1={n_pergunta:'1',
+			texto:'O edoxabano é:',
+			a:'Indutor competitivo do fator Xa.',
+			b:'Inibidor indireto do fator Xa.',
+			c:'Inibidor da síntese de trombina',
+			d:'Inibidor direto do fator Xa e indutor do fator IIa.',
+			r_certa:'C'
+		 };
+
+	var p2={n_pergunta:'2',
+			texto:'Quanto à farmacologia da eliminação e metabolização do edoxabano é VERDADE que:',
+			a:'50% da dose administrada é eliminada por via renal, e 10% é metabolizado via hepática',
+			b:'A eliminação renal é de 35% da dose absorvida por via oral',
+			c:'35% da dose administrada é eliminada via renal e o restante via hepática',
+			d:'50% da dose absorvida é eliminada por via renal, e 10% é metabolizado via hepática',
+			r_certa:'D'
+		 };
+
+	var p3={n_pergunta:'3',
+			texto:'No que diz respeito ao estudo 018 do edoxabano vs varfarina, qual a característica CORRETA:',
+			a:'Duração flexível do tratamento – de 3 a 12 meses',
+			b:'Duração do tratamento foi de 3 meses',
+			c:'Duração do tratamento foi de 12 meses',
+			d:'Avaliação primária de eficácia através da taxa de eventos hemorrágicos major e/ou não major clinicamente relevantes',
+			r_certa:'B'
+		 };
+
+	var p4={n_pergunta:'4',
+			texto:'No que diz respeito ao estudo 018 do edoxabano vs varfarina, qual a característica INCORRETA, no que se refere ao enpoint primário de segurança (taxa de eventos hemorrágicos major e CRNM):',
+			a:'Edoxabano 30 mg QD foi similar à varfarina',
+			b:'Edoxabano 60 mg QD foi similar à varfarina',
+			c:'Edoxabano 30mg e 60mg QD foi inferior à varfarina',
+			d:'Edoxabano 30mg e 60mg BID foi superior à varfarina',
+			r_certa:'C'
+		 };
+
+	var p5={n_pergunta:'5',
+			texto:'Relativamente aos principais estudos do desenvolvimento clínico do edoxabano, qual a afirmação CORRETA:',
+			a:'O ensaio de fase II de edoxabano versus enoxaparina destaca-se dos restantes anti-Xa por ter recrutado doentes com FA',
+			b:'Os estudos ENGAGE AF-TIMI 48, ROCKET-AF, ARISTOTLE e RE-LY utilizaram um desenho de estudo de não inferioridade para as análises de eficácia e segurança',
+			c:'O ensaio ENGAGE AF-TIMI 48 permitiu a inclusão de doentes que estivessem a tomar o antiagregante clopidogrel',
+			d:'O ensaio ENGAGE AF-TIMI 48 apresentou uma estratégia de ajuste de dose para os doentes com insuficiência renal moderada ou grave',
+			r_certa:'C'
+		 };
+
+
+	var p6={n_pergunta:'6',
+			texto:'Qual a opção CORRETA:',
+			a:'Hokusai era um pintor',
+			b:'Hokusai é o nome japonês que significa "grande onda"',
+			c:'Hokusai é o nome do grupo de investigação japonês que desenhou o estudo Hokusai-VTE',
+			d:'Hokusai era o nome do primeiro médico japonês a ganhar o prémio Nobel da Medicina',
+			r_certa:'A'
+		 };
+
+	var p7={n_pergunta:'7',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação CORRETA:',
+		a:'Um doente que fizesse verapamilo não ajustava a dose standard para metade',
+		b:'A maioria dos doentes tinham idade maior ou igual a 75 anos',
+		c:'Houve menos doentes com CHADS2 entre 4 a 6 do que doentes com CHADS2 de 2 e 3',
+		d:'A maioria dos doentes eram hipertensos e diabéticos',
+		r_certa:'C'
+	 };
+
+	var p8={n_pergunta:'8',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação INCORRETA:',
+		a:'A dose de edoxabano poderia ser reduzida a metade tanto no momento de aleatorização como durante o estudo',
+		b:'Apenas 1 doente abandonou o estudo ao retirar o consentimento informado',
+		c:'Foi um ensaio de não inferioridade, cujo endpoint primário de eficácia era apenas a taxa de AVC e/ou embolismo sistémico',
+		d:'A maioria dos doentes tinham insuficiência cardíaca congestiva',
+		r_certa:'B'
+	 };
+	
+	var p9={n_pergunta:'9',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação INCORRETA:',
+		a:'O endpoint primário de segurança foi a taxa de eventos hemorrágicos major e/ou não major clinicamente relevantes',
+		b:'O regime de 30mg/15mg de edoxabano foi não inferior à varfarina',
+		c:'A margem de não inferioridade (delta) foi de 1,38',
+		d:'A mediana do TTR para a varfarina foi de 68,4%',
+		r_certa:'A'
+	 };
+
+	 var p10={n_pergunta:'10',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação CORRETA:',
+		a:'A mediana do TTR para a varfarina foi de 64,8%',
+		b:'O regime de 30mg/15mg falhou em demonstrar a não-inferioridade versus varfarina, não tendo sido submetido à aprovação regulamentar',
+		c:'Era permitido o uso concomitante de ácido acetil-salicílico, apenas em doses iguais ou inferiores a 100mg/dia',
+		d:'O regime de 30mg/15mg teve um pior comportamento na redução do risco relativo de AVCs hemorrágico versus varfarina do que o regime de 60mg/30mg',
+		r_certa:'C'
+	 };
+
+	 var p11={n_pergunta:'11',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação CORRETA:',
+		a:'O regime de 30mg/15mg, apesar de ter conseguido excelentes resultados na redução do risco relativo de AVC isquémico, obteve piores resultados na redução da taxa de eventos de AVC hemorrágico.',
+		b:'O regime de 30mg/15mg foi o que teve melhor desempenho na redução da taxa de eventos hemorrágicos gastro-intestinais',
+		c:'O braço de 60/30mg demonstrou uma tendência para a superioridade versus varfarina, na redução do risco relativo de AVC hemorrágico',
+		d:'Foram apenas recrutados pacientes sem tratamento prévio com antagonistas da vitamina K',
+		r_certa:'B'
+	};
+
+	var p12={n_pergunta:'12',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação INCORRETA:',
+		a:'Os doentes com insuficiência renal grave (CrCl < 30 ml/min) não foram recrutados',
+		b:'Era permitida a inclusão de doentes com FANV, homossexuais, portadores de próteses dentárias, assim como de doentes com válvulas bioprotésicas',
+		c:'A população por intenção de tratar modificada (mITT) incluía todos os participantes que estiveram em tratamento ininterrupto durante todo o estudo',
+		d:'Foram apenas recrutados pacientes sem tratamento prévio com antagonistas da vitamina K',
+		r_certa:'C'
+	};
+
+	var p13={n_pergunta:'13',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação CORRETA:',
+		a:'A média da pontuação CHADS2 foi de 2,1',
+		b:'A percentagem de doentes que apresentavam uma pontuação CHADS2 maior de 3 foi de cerca de 58%',
+		c:'A percentagem de doentes hipertensos era de mais de 90%',
+		d:'A percentagem de pacientes que apresentavam uma pontuação CHADS2 maior de 3 foi de 64%',
+		r_certa:'C'
+	};
+
+	var p14={n_pergunta:'14',
+		texto:'Qual das seguintes afirmações é a CORRETA:',
+		a:'O dabigatrano 150mg foi o único que demonstrou superioridade estatística na redução do risco relativo de AVC isquémico versus a varfarina',
+		b:'No estudo ENGAGE AF-TIMI 48, a percentagem de pacientes que apresentavam uma pontuação CHADS2 de 1 foi de 10%',
+		c:'O dabigatrano 110mg foi o único que demonstrou superioridade estatística na redução do risco relativo de AVC isquémico versus a varfarina',
+		d:'O edoxabano 60/30mg demonstrou tendência para a superioridade da redução do risco relativo de AVC isquémico versus varfarina',
+		r_certa:'A'
+	};
+
+	var p15={n_pergunta:'15',
+		texto:'Qual das seguintes afirmações é a CORRETA:',
+		a:'Na fibrilhação auricular, edoxabano 60/30mg permitiu uma redução do risco relativo de mortalidade por todas as causas',
+		b:'Na fibrilação auricular, o edoxabano no regime 30/15mg foi o único NOAC a demonstrar melhor perfil de segurança versus varfarina, no que respeita às hemorragias gastro-intestinais',
+		c:'Na fibrilação auricular, o edoxabano no regime 30/15mg, e o apixabano, foram os únicos a demonstrar melhor perfil de segurança versus varfarina, no que respeita às hemorragias gastro-intestinais',
+		d:'O dabigatrano está contra-indicado num doente com ClCr de 32 ml/min',
+		r_certa:'B'
+	};
+
+	var p16={n_pergunta:'16',
+		texto:'Relativamente ao edoxabano, qual a opção CORRETA:',
+		a:'Foi superior na redução da taxa de eventos de enfarte agudo do miocárdio em relação à varfarina',
+		b:'É o único NOAC com um reduzido metabolismo hepático pela CYP',
+		c:'É o único NOAC 1xdia que demonstrou um melhor perfil de segurança versus varfarina, na redução da taxa de hemorragias major',
+		d:'Tem indicação na prevenção primária do TEV',
+		r_certa:'C'
+	};
+
+	var p17={n_pergunta:'17',
+		texto:'Relativamente ao estudo Hokusai-VTE, qual a afirmação CORRETA:',
+		a:'Recrutou menos doentes TVP do que doentes com EP',
+		b:'Demonstrou que o edoxabano tem um perfil de segurança semelhante à varfarina',
+		c:'A duração mínima da terapêutica era de 3 semanas',
+		d:'Teve os doentes com o melhor TTR em relação aos estudos dos restantes NOACs',
+		r_certa:'D'
+	};
+
+	var p18={n_pergunta:'18',
+		texto:'Relativamente ao estudo Hokusai-VTE, qual a afirmação INCORRETA:',
+		a:'Incluiu doentes com história de cancro',
+		b:'Permitiu a aprovação do edoxabano na prevenção secundária da recorrência de TEV',
+		c:'O período mínimo de tratamento heparínico foi de 3 semanas',
+		d:'Recrutou menos de 10000 doentes',
+		r_certa:'B'
+	};
+
+	var p19={n_pergunta:'19',
+		texto:'Relativamente ao 4-PCC, enquanto agente reversor aprovado no RCM do Lixiana, qual a informação CORRETA:',
+		a:'Reverte o efeito anticoagulante do edoxabano ao fim de 5min',
+		b:'Reverte o efeito anticoagulante do edoxabano ao fim de 30min',
+		c:'Reverte o efeito anticoagulante do edoxabano ao fim de 15min',
+		d:'Demonstrou reversão, apesar dos efeitos trombogénicos',
+		r_certa:'B'
+	};
+
+	var p20={n_pergunta:'20',
+		texto:'Qual das seguintes afirmações é a CORRETA:',
+		a:'No ENGAGE, um doente com insuficiência renal moderada, que fizesse amiodarona, e tivesse 72Kg de peso, fazia 30mg de edoxabano',
+		b:'No ENGAGE era permitida a utilização de dupla antiagregação plaquetar',
+		c:'No ENGAGE, um doente com insuficiência renaL ligeira, que fizesse verapamilo, e tivesse 72Kg de peso, fazia 60mg de edoxabano',
+		d:'O edoxabano tem um tempo de semi-vida (t1/2) de 24-36h, explicando a sua atividade anticoagulante de, no mínimo, 24h ',
+		r_certa:'A'
+	};
+
+
+	var p21={n_pergunta:'21',
+		texto:'Relativamente aos estudos do desenvolvimento clínico do edoxabano, qual a afirmação CORRETA:',
+		a:'No estudo 018, a dosagem de 2xdia de edoxabano 30mg foi associada a uma maior incidência de acontecimentos tromboembólicos do que a dosagem de 60mg 1xdia',
+		b:'Os estudo de fase III do edoxabano para a prevenção do AVC após cirurgia ortopédica foram realizados na Europa',
+		c:'Os estudo de fase III do edoxabano para a prevenção de AVC após cirurgia ortopédica foram realizados no Japão / Ásia',
+		d:'No estudo 018 de edoxabano vs varfarina, em pacientes com FA, a duração do tratamento foi de 12 semanas',
+		r_certa:'D'
+	};
+
+	var p22={n_pergunta:'22',
+		texto:'Qual das seguintes afirmações relativamente ao edoxabano está INCORRETA:',
+		a:'O objetivo primário do estudo 018 foi a avaliação da segurança do tratamento de 3 meses com edoxabano, em doentes com FA',
+		b:'A síntese de trombina é inibida pelo edoxabano',
+		c:'O edoxabano prolonga o tempo de protrombina',
+		d:'A t<sub>1/2</sub> de edoxabano após a administração oral é de 1 – 2 horas',
+		r_certa:'D'
+	};
+
+	var p23={n_pergunta:'23',
+		texto:'Qual das seguintes afirmações está CORRETA:',
+		a:'O estudo 018 recrutou indivíduos saudáveis e com FANV',
+		b:'No estudo 018, os tratamentos com edoxabano 30 mg QD e 60 mg QD foram associados a taxas de incidência de hemorragias major e não major clinicamente relevantes superiores às observadas com varfarina',
+		c:'No estudo 018, o período de tratamento foi de 12 meses',
+		d:'O braço de dabigatrano 110mg, no estudo RELY, demonstrou melhor perfil de segurança versus varfarina',
+		r_certa:'D'
+	};
+
+	var p24={n_pergunta:'24',
+		texto:'Relativamente ao estudo ENGAGE AF-TIMI 48, qual a afirmação INCORRETA:',
+		a:'A incidência de hemorragias gastrointestinais diminuiu significativamente com o regime de dose mais baixa de edoxabano (30/15mg',
+		b:'A incidência de hemorragias gastrointestinais foi semelhante com a dose mais alta de edoxabano versus varfarina',
+		c:'A incidência de acidentes vasculares cerebrais hemorrágicos foi reduzida significativamente com ambos os regimes de doses de edoxabano (30/15mg e 60/30mg)',
+		d:'Foram apenas recrutados pacientes com risco acrescido de AVC',
+		r_certa:'B'
+	};
+
+	// var p25={n_pergunta:'25',
+	// 	texto:'Qual das seguintes afirmações está CORRETA:',
+	// 	a:'Nos estudos ARISTOTLE, tal como no estudo ENGAGE AF- TIMI 48, as doses de tratamento também foram ajustadas após a aleatorização',
+	// 	b:'ENGAGE AF-TIMI 48 é um estudo aleatorizado, em dupla ocultação, de superioridade, que compara o edoxabano com doses ajustadas de varfarina na prevenção de acidentes vasculares cerebrais e embolia sistémica em pacientes com FA não valvular',
+	// 	c:'Os comprimidos de Pradaxa não têm lactose à semelhança dos comprimidos de Lixiana',
+	// 	d:'No estudo ARISTOTLE com apixabano, a administração do medicamento foi de 1xdia',
+	// 	r_certa:'C'
+	// };
+
+	// var p26={n_pergunta:'26',
+	// 	texto:'Relativamente aos vários NOACs e respetivos estudos de fase III em FANV, qual a afirmação CORRETA:',
+	// 	a:'O apixabano foi o único fármaco que demonstrou semelhante perfil de segurança em termos de incidência de hemorragias gastro-intestinais versus varfarina',
+	// 	b:'O rivaroxabano mostrou uma eficácia estatisticamente superior à varfarina, na análise do resultado de eficácia primário',
+	// 	c:'O rivaroxabano mostrou um perfil de segurança superior comparado com varfarina, face ao resultado de segurança primário',
+	// 	d:'O estudo ENGAGE é um ensaio retrospetivo, aleatorizado, duplo-simulado, aberto.',
+	// 	r_certa:'A'
+	// };
+
+	// var p27={n_pergunta:'27',
+	// 	texto:'Acerca da informação contida no RCM do Lixiana, qual das seguintes afirmações é a CORRETA:',
+	// 	a:'Na transição da varfarina para o edoxabano deverá descontinuar-se a varfarina e iniciar Lixiana, quando o INR for ≤ 2,5',
+	// 	b:'É contraindicada a utilização do Lixiana em doentes com compromisso hepático ligeiro e moderado',
+	// 	c:'Em doentes com compromisso hepático ligeiro a moderado, a dose recomendada é de 30 mg de Lixiana uma vez por dia',
+	// 	d:'Nos estudos clínicos, observou-se uma menor de frequência hemorragias das mucosas (ex.: epistaxe, genitourinária) em comparação com o tratamento com AVK',
+	// 	r_certa:'A'
+	// };
+
+	// var p28={n_pergunta:'28',
+	// 	texto:'Relativamente ao edoxabano, qual das seguintes afirmações é a CORRETA:',
+	// 	a:'Em doentes com doença hepática associada a coagulopatia e risco de hemorragia clinicamente relevante recomenda-se utilizar Lixiana com precaução', 
+	// 	b:'Anemia é uma reação adversa frequente do Lixiana',
+	// 	c:'Recomenda-se a suspensão do tratamento com Lixiana por um período não inferior a 24h, previamente à extração de 2 dentes',
+	// 	d:'Está contraindicada a utilização do edoxabano conjuntamente com AINEs, devido ao alto risco hemorrágico dos AINEs',
+	// 	r_certa:'B'
+	// };
+
+	var p29={n_pergunta:'29',
+		texto:'Qual das seguintes afirmações é a CORRETA:',
+		a:'O edoxabano é predominantemente absorvido no trato gastrointestinal (GI) inferior',
+		b:'O edoxabano prolonga os testes de coagulação padrão tais como o TP, aPTT, INR',
+		c:'O 4-PCC a 50 UI/kg demonstrou reverter os efeitos de Lixiana 5 minutos após o final da perfusão',
+		d:'A seguir ao EAM, o AVC é a segunda maior causa de mortalidade em Portugal',
+		r_certa:'B'
+	};
+
+	// var p30={n_pergunta:'30',
+	// 	texto:'Das seguintes afirmações, qual a CORRETA:',
+	// 	a:'Os medicamentos que aumentam o esvaziamento gástrico e a motilidade intestinal não têm o potencial de reduzir a absorção do edoxabano',
+	// 	b:'O 4-PCC a 50 UI/kg demonstrou reverter os efeitos de Lixiana 30 min após o final da perfusão',
+	// 	c:'Lixiana 15mg deverá ser apenas utilizada na transição de varfarina para edoxabano',
+	// 	d:'O edoxabano não está contraindicado em doentes com hipertensão não controlada',
+	// 	r_certa:'B'
+	// };
+
+	var p31={n_pergunta:'31',
+		texto:'Quantas moléculas do fator IIa são ativadas por 1 molécula de fator Xa?',
+		a:'100',
+		b:'1.000',
+		c:'10.000',
+		d:'100.000',
+		r_certa:'B'
+	};
+
+	var p32={n_pergunta:'32',
+		texto:'No ensaio ENGAGE AF-TIMI 48, a dose de edoxabano poderia ser reduzida a metade',
+		a:'Apenas no momento de aleatorização.',
+		b:'Apenas durante o período de seguimento.',
+		c:'Tanto no momento de aleatorização como durante o seguimento.',
+		d:'A dose de edoxabano não podia ser reduzida.',
+		r_certa:'C'
+	};
+
+	// var p33={n_pergunta:'33',
+	// 	texto:'No ensaio ENGAGE AF-TIMI 48, a mediana do tempo no intervalo terapêutico para a varfarina foi de:',
+	// 	a:'68,4%',
+	// 	b:'64,8%',
+	// 	c:'58,0%',
+	// 	d:'58,0%',
+	// 	r_certa:'A'
+	// };
+
+	var p34={n_pergunta:'34',
+		texto:'Em quais dos estudos: RE-LY, ARISTOTLE, ROCKET-AF e ENGAGE AF-TIMI 48 havia uma maior percentagem, de pacientes com CHADS2 > 3?',
+		a:'RE-LY',
+		b:'ARISTOTLE',
+		c:'ROCKET-AF',
+		d:'ENGAGE AF-TIMI 48',
+		r_certa:'C'
+	};
+
+	var p35={n_pergunta:'35',
+		texto:'No estudo ENGAGE AF-TIMI 48 foram incluídos pacientes:',
+		a:'Todas as opções estão corretas',
+		b:'Com FA não valvular documentada nos 12 meses anteriores',
+		c:'Com idades > 21 anos',
+		d:'Com pontuação de risco CHADS2 > 2',
+		r_certa:'A'
+	};
+
+	var p36={n_pergunta:'36',
+		texto:'Qual destes ensaios clínicos foi PROBE?',
+		a:'RE-LY',
+		b:'ARISTOTLE',
+		c:'ROCKET-AF',
+		d:'ENGAGE AF-TIMI 48',
+		r_certa:'A'
+	};
+
+	var p37={n_pergunta:'37',
+		texto:'No estudo ENGAGE AF-TIMI 48 , os pacientes foram estratificados de acordo com:',
+		a:'A pontuação CHADS2 de 1–2 face a 3–4',
+		b:'A redução da dose de edoxabano',
+		c:'A clearance de creatinina',
+		d:'O peso',
+		r_certa:'B'
+	};
+
+	var p38={n_pergunta:'38',
+		texto:'Indique um dos três elementos que compõem a variável de eficácia primária composta no estudo ENGAGE-AF TIMI 48',
+		a:'Acidente vascular cerebral isquémico',
+		b:'Enfarte de miocárdio',
+		c:'Embolia Pulmonar',
+		d:'Mortalidade CV',
+		r_certa:'A'
+	};
+
+	var p39={n_pergunta:'39',
+		texto:'A percentagem de pacientes com HTA no estudo ENGAGE-AF TIMI 48 foi de:',
+		a:'79%',
+		b:'88%',
+		c:'90%',
+		d:'94%',
+		r_certa:'D'
+	};
+
+	var p40={n_pergunta:'40',
+		texto:'Quantas perdas ocorreram durante o período de seguimento no ensaio ENGAGE-AF TIMI 48?',
+		a:'40 pacientes',
+		b:'1 doente',
+		c:'0 doentes',
+		d:'22 doentes',
+		r_certa:'B'
+	};
+
+	var p41={n_pergunta:'41',
+		texto:'No estudo ENGAGE-AF TIMI 48, o regime de 60 mg de edoxabano apresentou uma redução estatisticamente significativa de:',
+		a:'Hemorragias fatais vs varfarina',
+		b:'Hemorragias em órgãos críticos vs varfarina',
+		c:'Intracranianas vs varfarina',
+		d:'Todas as opções estão corretas',
+		r_certa:'D'
+	};
+
+	var p42={n_pergunta:'42',
+		texto:'No estudo ENGAGE-AF TIMI 48, o regime de 60 mg de edoxabano apresentou uma redução estatisticamente significativa da variável composta de',
+		a:'Acidentes vasculares cerebrais, ES ou morte devido a problemas CV vs varfarina',
+		b:'Acidentes vasculares cerebrais, ES ou morte vs varfarina',
+		c:'Acontecimentos adversos cardíacos graves vs varfarina',
+		d:'Todas as opções estão corretas',
+		r_certa:'D'
+	};
+
+	var p43={n_pergunta:'43',
+		texto:'A fase inicial de tratamento com HNF/HBPM no estudo HOKUSAI VTE',
+		a:'36 horas',
+		b:'48 horas',
+		c:'5-12 dias',
+		d:'+ 12 dias',
+		r_certa:'C'
+	};

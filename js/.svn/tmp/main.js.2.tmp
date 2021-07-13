@@ -1,0 +1,170 @@
+var ajudas = 3;
+var nivel =1;
+var round =1;
+
+var escolha;
+var certa;
+
+$(document).ready(function(){
+
+	$('.home').click(function(event) {
+		/* Act on the event */
+
+		$('.area-jogo').fadeIn(100);
+		$(this).fadeOut(500);
+	});
+
+	//setPerguntas = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p1,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24];
+
+	//console.log(p1.texto);
+
+	//iniciaJogo(setPerguntas, ajudas);
+setPerguntas = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p13,p17,p18,p19,p29,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43];
+//p5, 10, 11, 12, 14, 15
+
+<<<<<<< .mine
+//setPerguntas = [p2];
+=======
+setPerguntas = [p1];
+>>>>>>> .r28
+
+	shuffle(setPerguntas);
+	mostraPergunta();
+	var actualQuestion;
+
+//	$('.n1').attr('src','images/n1Activo.png');
+
+
+	//console.log(nivel);
+
+});
+
+function mostraPergunta(){
+	$('.n'+nivel).attr('src','images/n'+nivel+'Activo.png');
+	$('.respostas li').css('pointer-events','auto');
+
+	$('.r-A').removeClass('r-A-errado');
+	$('.r-A').removeClass('r-A-certo');
+	$('.r-A').removeClass('r-A-block');
+
+	$('.r-B').removeClass('r-B-errado');
+	$('.r-B').removeClass('r-B-certo');
+	$('.r-B').removeClass('r-B-block');
+
+	$('.r-C').removeClass('r-C-errado');
+	$('.r-C').removeClass('r-C-certo');
+	$('.r-C').removeClass('r-C-block');
+
+	$('.r-D').removeClass('r-D-errado');
+	$('.r-D').removeClass('r-D-certo');
+	$('.r-D').removeClass('r-D-block');
+
+
+
+	//console.log(nivel);
+
+	//console.log(setPerguntas);
+
+
+	//recebe o array de perguntas e as ajudas.
+	//retira a ultima pergunta do array e exibe no ecra 
+	var question = setPerguntas[setPerguntas.length-1];
+	actualQuestion=question;
+
+	setPerguntas.pop();
+	//console.log(question);
+	//DESENHA PERGUNTA
+	$('.pergunta p').html(question.texto);
+	//DESENHA RESPOSTAS POSSIVEIS
+	$('.r-A p').html(question.a);
+	$('.r-B p').html(question.b);
+	$('.r-C p').html(question.c);
+	$('.r-D p').html(question.d);
+
+}
+
+function checkAnswer(){
+	//alert(certa);
+	if(escolha==certa){
+		//alert('acertou');
+		$('.r-'+certa).addClass('r-'+certa+'-certo');
+		if(nivel<6){
+			//mostraPergunta();
+			nivel++;
+			
+
+
+		} else {
+			$('.r-'+certa).addClass('r-'+certa+'-certo');
+			alert('acabou');
+		}
+	} else {
+		alert('falhou');
+
+		$('.r-'+escolha).addClass('r-'+escolha+'-errado');
+
+		$('.r-'+certa).addClass('r-'+certa+'-certo');
+
+		if(ajudas==0){
+			alert('acabou o jogo');
+		}
+	}
+
+}
+
+function chooseAnswer(answer){
+	//console.log(nivel);
+	console.log('a resposta e '+answer);
+	console.log(actualQuestion);
+	console.log('a resposta certa é:'+actualQuestion.r_certa);
+
+	$('.r-'+answer).addClass('r-'+answer+'-block');
+	$('.respostas li').css('pointer-events','none');
+	//$('.respostas li').click(function(){return false;});
+	escolha = answer;
+	certa=actualQuestion.r_certa;
+
+
+
+
+}
+
+function getHelp(){
+	if(ajudas>0){
+		alert(ajudas);
+			ajudas--;
+		if(ajudas ==2){
+			$('.ajuda-1').attr('src','images/vidaUsada.png')
+		}
+
+		if(ajudas ==1){
+			$('.ajuda-2').attr('src','images/vidaUsada.png')
+		}
+
+		if(ajudas ==0){
+			$('.ajuda-3').attr('src','images/vidaUsada.png')
+		}
+
+	
+		mostraPergunta();
+	}
+	else {
+		alert('Não há mais ajudas');
+	}
+}
+
+
+function shuffle(array) {
+  	var currentIndex = array.length, temporaryValue, randomIndex;
+
+  	while (0 !== currentIndex) {
+    	randomIndex = Math.floor(Math.random() * currentIndex);
+    	currentIndex -= 1;
+
+    	temporaryValue = array[currentIndex];
+    	array[currentIndex] = array[randomIndex];
+    	array[randomIndex] = temporaryValue;
+  	}
+
+  	return array;
+}

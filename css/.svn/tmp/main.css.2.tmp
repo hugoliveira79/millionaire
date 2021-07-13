@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'brandon_bld';
+  src: url("../fonts/brandon_bld-webfont.woff2") format("woff2"), url("../fonts/brandon_bld-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'brandon_medium';
+  src: url("../fonts/brandon_med-webfont.woff2") format("woff2"), url("../fonts/brandon_med-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'brandon';
+  src: url("../fonts/brandon_reg-webfont.woff2") format("woff2"), url("../fonts/brandon_reg-webfont.woff") format("woff"); }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'brandon_bld';
+  background: #000; }
+
+.home {
+  width: 1920px;
+  height: 1080px;
+  background: url(../images/bg1.png) no-repeat;
+  float: left;
+  /*display:none;*/ }
+
+.area-jogo {
+  width: 1920px;
+  height: 1080px;
+  background: url(../images/bg2.png) no-repeat;
+  float: left;
+  display: none; }
+  .area-jogo .gestao-jogo {
+    height: 613px;
+    padding: 67px 0;
+    float: left; }
+  .area-jogo .gestao-equipa {
+    padding-left: 150px; }
+    .area-jogo .gestao-equipa li {
+      height: 180px; }
+      .area-jogo .gestao-equipa li li img {
+        width: auto; }
+    .area-jogo .gestao-equipa img {
+      width: 100%; }
+  .area-jogo .gestao-niveis {
+    padding-right: 100px; }
+    .area-jogo .gestao-niveis ul {
+      float: right;
+      margin-right: 15px; }
+    .area-jogo .gestao-niveis li {
+      height: 80px; }
+  .area-jogo .area-pergunta-resposta {
+    float: left; }
+    .area-jogo .area-pergunta-resposta .pergunta {
+      height: 195px;
+      background: url(../images/perguntas.png) no-repeat;
+      width: 1792px;
+      margin-left: 62px;
+      padding: 0 98px;
+      display: table; }
+      .area-jogo .area-pergunta-resposta .pergunta p {
+        margin: 0 150px 0 150px;
+        color: #ffffff;
+        font-family: 'brandon_bld';
+        font-size: 36px;
+        text-align: center;
+        height: 186px;
+        vertical-align: middle;
+        display: table-cell; }
+    .area-jogo .area-pergunta-resposta .respostas {
+      height: 250px;
+      padding-left: 62px;
+      /* CERTOS */
+      /* ERRADO */ }
+      .area-jogo .area-pergunta-resposta .respostas .resposta {
+        display: table; }
+        .area-jogo .area-pergunta-resposta .respostas .resposta p {
+          color: #ffffff;
+          font-family: 'brandon';
+          font-size: 28px;
+          line-height: 30px;
+          width: 590px;
+          vertical-align: middle;
+          display: table-cell; }
+      .area-jogo .area-pergunta-resposta .respostas .r-A {
+        background: url(../images/respostaA.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-B {
+        background: url(../images/respostaB.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-C {
+        background: url(../images/respostaC.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-D {
+        background: url(../images/respostaD.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-A-block {
+        background: url(../images/respostaA_blo.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-B-block {
+        background: url(../images/respostaB_blo.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-C-block {
+        background: url(../images/respostaC_blo.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-D-block {
+        background: url(../images/respostaD_blo.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-A-certo {
+        background: url(../images/respostaA_ver.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-B-certo {
+        background: url(../images/respostaB_ver.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-C-certo {
+        background: url(../images/respostaC_ver.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-D-certo {
+        background: url(../images/respostaD_ver.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-A-errado {
+        background: url(../images/respostaA_verm.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-B-errado {
+        background: url(../images/respostaB_verm.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-C-errado {
+        background: url(../images/respostaC_verm.png) no-repeat;
+        width: 861px;
+        height: 120px;
+        float: left;
+        padding: 0 50px 0 190px; }
+      .area-jogo .area-pergunta-resposta .respostas .r-D-errado {
+        background: url(../images/respostaD_verm.png) no-repeat;
+        width: 934px;
+        height: 120px;
+        float: left;
+        margin-left: -8px;
+        padding: 0 120px 0 190px; }
+  .area-jogo .parabens-n6 {
+    display: none;
+    margin-top: 613px; }
+    .area-jogo .parabens-n6 ul {
+      width: 100%;
+      text-align: center; }
+      .area-jogo .parabens-n6 ul img {
+        margin-top: 25px; }
+  .area-jogo .ooohhh-n3 {
+    display: none;
+    margin-top: 613px; }
+    .area-jogo .ooohhh-n3 ul {
+      width: 100%;
+      text-align: center; }
+      .area-jogo .ooohhh-n3 ul img {
+        margin-top: 25px; }
+
+.verifica-resposta {
+  /*background:red;*/
+  height: 500px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,455 @@
+ 
+@font-face {
+    font-family: 'brandon_bld';
+    src: url('../fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_bld-webfont.woff') format('woff'),
+}
+
+@font-face {
+     
+    font-family: 'brandon_medium';
+    src: url('../fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_med-webfont.woff') format('woff'),
+}
+
+@font-face {
+     
+    font-family: 'brandon';
+    src: url('../fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_reg-webfont.woff') format('woff'),
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family:'brandon_bld';
+	background:#000;
+	overflow:hidden;
+}
+
+.wrapper{
+	    -ms-transform: scale(2, 3);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.54, 0.54);
+    /* margin-top: -250px; */
+    /* margin-left: -226px; */
+    transform-origin: 0% 19%;
+
+}
+
+.home{
+	width:1920px;
+	height:1080px;
+	background:url(../images/bg1.png) no-repeat;
+	float: left;
+	display:block;
+}
+
+.area-jogo{
+	width:1920px;
+	height:1080px;
+	background:url(../images/bg2.png) no-repeat;
+	float: left;
+	display:none;
+
+	.gestao-jogo{
+		height:613px;
+		padding: 55px 0;
+		float: left;
+	}
+
+	.gestao-equipa{
+
+		padding-left: 96px;
+
+		li{
+			height: 140px;
+
+			li img{
+				width: auto;
+			}
+		}
+
+		.timer{
+			background: url(../images/nova-equipa.png) no-repeat;
+		    height: 256px;
+		    width: 530px;
+		    padding-top: 80px;
+		    background-size:530px;
+		    
+
+
+		    #countdown{
+		    	font-weight: bold;
+			    display: block;
+			    width: 530px;
+			    
+			    height: 140px;
+			    font-size: 100px;
+			    text-align: center;
+			    padding-top: 10px;
+			    color: #fff;
+		    }
+
+		}
+
+		img{
+			width:100%;
+		}
+
+	}
+
+	.gestao-niveis{
+
+		padding-right: 100px;
+		margin-top: 44px;
+
+		ul{
+			float: right;
+			margin-right: 15px;
+		}
+		li{
+			height: 80px;
+		}
+	}
+
+
+	.area-pergunta-resposta{
+		float:left;
+
+		.pergunta{
+			height:195px;
+			background: url(../images/perguntas.png) no-repeat;
+			width: 1792px;
+			margin-left: 92px;
+			padding: 0 98px;
+			display: table;
+
+			p{
+			    margin: 0 150px 0 150px;
+			    // padding: 50px 0 40px 0;
+			    color: #ffffff;
+			    font-family: 'brandon_bld';
+			    font-size: 36px;
+			    text-align: center;
+			    height: 186px;
+
+			    vertical-align: middle;
+    			display: table-cell;
+			}
+    		
+		}
+
+		.respostas{
+			height: 250px;
+			// background:yellow;
+			padding-left: 82px;
+			margin-top: 12px;
+
+
+			.resposta{
+				/*display: table;*/
+				// padding: 0 120px 0 190px;
+				p{
+					// margin: 0 55px 0 210px;
+				 //    padding: 40px 0 40px 0;
+				    color: #ffffff;
+				    font-family: 'brandon';
+				    font-size: 28px;
+				    line-height: 30px;
+				    width: 590px;
+				    display: block;
+    margin-top: 30px;
+
+				    // text-align: center;
+				    vertical-align: middle;
+    				/*display: table-cell;*/
+				}
+			}
+
+
+			.r-A{
+				background: url(../images/respostaA.png) no-repeat;
+				width: 950px;
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-B{
+				background: url(../images/respostaB.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+			    margin-left: -8px;
+			    padding: 0 120px 0 190px;
+			}
+
+			.r-C{
+				background: url(../images/respostaC.png) no-repeat;
+				width: 950px;
+				
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-D{
+				background: url(../images/respostaD.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+    			margin-left: -8px;
+    			padding: 0 120px 0 190px;
+			}
+
+			.r-A-block{
+				background: url(../images/respostaA_blo.png) no-repeat;
+				width: 950px;
+				
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-B-block{
+				background: url(../images/respostaB_blo.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+			    margin-left: -8px;
+			    padding: 0 120px 0 190px;
+			}
+
+			.r-C-block{
+				background: url(../images/respostaC_blo.png) no-repeat;
+				width: 950px;
+				
+
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-D-block{
+				background: url(../images/respostaD_blo.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+    			margin-left: -8px;
+    			padding: 0 120px 0 190px;
+			}
+
+			/* CERTOS */
+
+			.r-A-certo{
+				background: url(../images/respostaA_ver.png) no-repeat;
+				width: 950px;
+			
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-B-certo{
+				background: url(../images/respostaB_ver.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+			    margin-left: -8px;
+			    padding: 0 120px 0 190px;
+			}
+
+			.r-C-certo{
+				background: url(../images/respostaC_ver.png) no-repeat;
+				width: 950px;
+			
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-D-certo{
+				background: url(../images/respostaD_ver.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+    			margin-left: -8px;
+    			padding: 0 120px 0 190px;
+			}
+
+			/* ERRADO */
+				.r-A-errado{
+				background: url(../images/respostaA_verm.png) no-repeat;
+				width: 950px;
+				
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-B-errado{
+				background: url(../images/respostaB_verm.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+			    margin-left: -8px;
+			    padding: 0 120px 0 190px;
+			}
+
+			.r-C-errado{
+				background: url(../images/respostaC_verm.png) no-repeat;
+				width: 950px;
+			
+    			height: 120px;
+    			float: left;
+    			padding: 0 50px 0 190px;
+			}
+
+			.r-D-errado{
+				background: url(../images/respostaD_verm.png) no-repeat;
+				width: 824px;
+    			height: 120px;
+    			float: left;
+    			margin-left: -8px;
+    			padding: 0 120px 0 190px;
+			}
+		}
+	}
+
+	
+
+}
+
+.verifica-resposta{
+	/*background:red;*/
+	height:500px;
+}
+
+.parabens-n6{
+		display: none;
+		padding-top: 613px;
+		background:url(../images/bg2.png) no-repeat;
+		width: 100%;
+    	height: 1080px;
+
+    	
+    	ul{
+    		width: 100%;
+    		text-align: center;
+
+    		img{
+    			margin-top: 25px;
+    		}
+    	}
+	}
+	
+	.ooohhh-n3{
+		display: none;
+		padding-top: 613px;
+    	background: url(../images/bg2.png) no-repeat;
+   		width:1920px;
+	height:1080px;
+
+    	
+    	ul{
+    		width: 100%;
+    		text-align: center;
+
+    		img{
+    			margin-top: 25px;
+    		}
+    	}
+	}
+
+	.ooohhh{
+		display: none;
+		padding-top: 613px;
+    	background: url(../images/bg2.png) no-repeat;
+   		width: 100%;
+    	height: 1080px;
+
+    	
+    	ul{
+    		width: 100%;
+    		text-align: center;
+
+    		img{
+    			margin-top: 25px;
+    		}
+    	}
+	}
+
+.sounds{
+	display:none;
+}
+
+.scores{
+	margin-left:-40px;
+	margin-top:44px;
+
+	li{
+		background:yellow;
+		width:414px;
+		height:114px;
+
+		span{
+			/* background: pink; */
+		    float: right;
+		    display: block;
+		    margin-top: 29px;
+		    margin-right: 30px;
+		    color: #fff;
+		    text-align: center;
+		    width: 100px;
+		    font-size: 40px;
+		}
+	}
+
+	.score-a{background: url('../images/equipa_a_on.png') no-repeat;}
+	.score-b{background: url('../images/equipa_b_next.png') no-repeat;}
+	.score-c{background: url('../images/equipa_c_next.png') no-repeat;}
+	.score-d{background: url('../images/equipa_d_next.png') no-repeat;}
+
+
+}
+
+
+.score_result{
+	width: 1112px;
+	height:227px;
+	margin: 0 auto;
+	    padding-top: 37px;
+
+	span{
+		font-size: 110px;
+	    color: #fff;
+	    display: block;
+
+	    width: 120px;
+	    text-align: center;
+        margin-left: 610px;
+	}
+}
+
+.score_result_A{
+	background:url('../images/final_score_A.png');
+	display:none;
+}
+
+.score_result_B{
+	background:url('../images/final_score_B.png');
+	display:none;
+
+}
+.score_result_C{
+	background:url('../images/final_score_C.png');
+	display:none;
+
+}
+
+.score_result_D{
+	background:url('../images/final_score_D.png');
+	display:none;
+
+}
